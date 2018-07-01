@@ -1,0 +1,26 @@
+.div__header--background {
+  background-color: #1F1F1F; }
+
+.section__user-menu-mobile {
+  display: flex; }
+
+.article__user-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem; }
+
+.img__logo-mobile {
+  width: 3.125rem;
+  height: 3.125rem; }
+
+.img__search-mobile {
+  width: 26px;
+  height: 30px; }
+
+.img__search,
+.img__logo,
+.div__menu-wrapper,
+.article__header-welcome {
+  display: none; }
+
+/*# sourceMappingURL=header-mobile.css.map */

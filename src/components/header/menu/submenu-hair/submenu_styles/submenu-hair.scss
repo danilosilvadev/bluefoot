@@ -1,0 +1,57 @@
+@import '../../../../../util/sass/rem-converter.scss';
+@import '../../../../../util/sass/global-variables.scss';
+
+.section__submenu {
+  display: flex;
+  margin-left: calculateRem(32);
+
+  > article {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+    &:first-child {
+      margin-right: calculateRem(100);
+    }
+
+    &:last-child {
+      margin-left: calculateRem(100);
+      margin-right: calculateRem(100);
+    }
+
+    > a {
+      font-size: calculateRem(10);
+      margin-top: calculateRem(20);
+      color: $MENU_ITEM_COLOR;
+      text-decoration: none;
+    }
+  
+    > a:hover {
+      color: white;
+    }
+  }  
+}
+
+.span__submenu-title {
+  color: white;
+  font-size: calculateRem(26);
+  font-weight: bold;
+  margin-bottom: calculateRem(16);
+  margin-top: calculateRem(16);
+  margin-left: calculateRem(32);
+}
+
+.div__submenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: calculateRem(16);
+}
+
+.div__go-to-header {
+  margin-top: calculateRem(30);
+  color: $MENU_ITEM_COLOR;
+  text-decoration: none;
+  background-color: black;
+  font-weight: bold;
+  padding: calculateRem(16) 0 calculateRem(16) calculateRem(32);
+}

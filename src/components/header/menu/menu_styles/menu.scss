@@ -1,0 +1,86 @@
+@import '../../../../util/sass/rem-converter.scss';
+@import '../../../../util/sass/global-variables.scss';
+
+.article__menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: calculateRem(16);
+  padding-top: calculateRem(5);
+  padding-bottom: calculateRem(5);
+}
+
+.nav__menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  font-size: calculateRem(13);
+  margin-top: calculateRem(10);
+  margin-bottom: calculateRem(10);
+
+  &:first-child {
+    margin-left: calculateRem($GLOBAL_MARGIN);
+  }
+
+  &:last-child {
+    margin-right: calculateRem(204);
+    padding-left: calculateRem(120);
+  }
+  
+  > a {
+    margin-right: calculateRem(16);
+    text-decoration: none;
+    color: $MENU_ITEM_COLOR;
+    white-space: nowrap;
+  }
+
+  > a:hover {
+    color: white;
+  }
+
+  > article {
+    margin-right: calculateRem(16);
+    white-space: nowrap;
+
+    > a {
+      color: $MENU_ITEM_COLOR;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+}
+
+.submenu-hair {
+  display: none;
+  position: absolute;
+  margin-top: calculateRem(30);
+  background-color: $MENU_BACKGROUND_COLOR;
+  left: calculateRem($GLOBAL_MARGIN);
+}
+
+.div__triangle {
+  width: 0; 
+  height: 0;
+  display: none; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid $MENU_BACKGROUND_COLOR;
+  position: absolute;
+  margin-top: calculateRem(20);
+  left: calculateRem(300);
+  z-index: 1;
+}
+
+.article__cabelo-option:hover > * {
+  display: flex;
+}
+
+.div__submenu-cheat {
+  display: none;
+  height: calculateRem(30);
+  position: absolute;
+  width: calculateRem(70);
+}

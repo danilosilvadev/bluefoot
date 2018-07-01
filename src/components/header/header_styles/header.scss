@@ -1,0 +1,136 @@
+@import '../../../util/sass/rem-converter.scss';
+@import '../../../util/sass/global-variables.scss';
+@import '../../../util/sass/mobile-icon-animation.scss';
+@import './mobile_styles/header-mobile.scss';
+
+@media screen and (min-width: $DESKTOP_SIZE){
+  
+  .div__menu-wrapper {
+    display: block;
+  }
+
+  .img__logo-mobile {
+    display: none;
+  }
+
+  .div__header--background {
+    background-color: $MENU_BACKGROUND_COLOR;
+    min-width: 1121px;
+  }
+  
+  .section__header {
+    color: lightGrey;
+    font-size: calculateRem(11);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: calculateRem($GLOBAL_MARGIN);
+    margin-right: calculateRem($GLOBAL_MARGIN);
+    white-space: nowrap;
+  }
+
+  #div__mobile-menu {
+    display: none;
+    border: 1px solid red;
+  }
+  
+  .article__header-welcome {
+    display: flex;
+    justify-content: space-between;
+    
+    > div:first-child {
+      display: flex;
+      padding-right: calculateRem(80);
+      border-bottom: 1px solid grey;
+      padding-bottom: calculateRem(16)
+    }
+    
+    > div:last-child {
+      display: flex;
+      padding-left: calculateRem(80);
+      border-bottom: 1px solid grey;
+    }
+  }
+  
+  .div__header--margin-border {
+    margin-top: calculateRem(16);
+    
+    > strong {
+      margin-right: calculateRem(16);
+    }
+  }
+  
+  .a__header--margin-right {
+    margin-right: calculateRem(16);
+    color: white;
+    text-decoration: none;
+  }
+  
+  .a__attendance--color {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .article__user-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: calculateRem(5);
+    margin-left: 0;
+    margin-right: 0;
+    
+    > article {
+      display: flex;
+      padding-left: calculateRem(422);
+    }
+  }
+  
+  .div__logout--margin {
+    margin-right: calculateRem(16);
+    margin-top: calculateRem(16);
+  }
+
+  .section__user-menu-mobile {
+    display: none;
+  }
+  
+  .div__search-menu {
+    margin-top: calculateRem(16);
+  }
+  
+  .img__logo {
+    display: block;
+    width: 100px;
+    position: absolute;
+    left: 43.5%;
+    right: 43.5%;
+    margin-top: calculateRem(27);
+  }
+  
+  .img__search {
+    display: flex;
+    position: absolute;
+    width: 26px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .input__search {
+    background-image: url(../../../assets/search.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: calculateRem(220);
+  
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+  
+    padding: 10px 5px 10px 20px;
+    text-indent: 20px;
+  }
+}

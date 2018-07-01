@@ -1,0 +1,42 @@
+.section__submenu {
+  display: flex;
+  margin-left: 2rem; }
+  .section__submenu > article {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold; }
+    .section__submenu > article:first-child {
+      margin-right: 6.25rem; }
+    .section__submenu > article:last-child {
+      margin-left: 6.25rem;
+      margin-right: 6.25rem; }
+    .section__submenu > article > a {
+      font-size: 0.625rem;
+      margin-top: 1.25rem;
+      color: #a8a8a8;
+      text-decoration: none; }
+    .section__submenu > article > a:hover {
+      color: white; }
+
+.span__submenu-title {
+  color: white;
+  font-size: 1.625rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem; }
+
+.div__submenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem; }
+
+.div__go-to-header {
+  margin-top: 1.875rem;
+  color: #a8a8a8;
+  text-decoration: none;
+  background-color: black;
+  font-weight: bold;
+  padding: 1rem 0 1rem 2rem; }
+
+/*# sourceMappingURL=submenu-hair.css.map */
